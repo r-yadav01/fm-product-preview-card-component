@@ -12,34 +12,47 @@
         <link rel="stylesheet" href="reset.css" />
         <link rel="stylesheet" href="style.css" />
 
-        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
 
         <title>Product preview card component</title>
     </head>
     <body>
         <div class="max-width-wrapper">
             <article>
-                <img src="./images/image-product-mobile.jpg" alt="ferfume-image" />
+                <picture class="perfume-image">
+                    <source
+                        srcset="./images/image-product-desktop.jpg"
+                        media="(min-width: 650px)"
+                    />
+                    <img
+                        src="./images/image-product-mobile.jpg"
+                        alt="perfume-img"
+                    />
+                </picture>
 
                 <div class="info">
                     <div class="item-type">PERFUME</div>
                     <h1 class="fraunces">Gabrielle Essence Eau De Parfum</h1>
                     <p>
-                        A floral, solar and voluptuous interpretation composed by Olivier Polge,
-                        Perfumer-Creator for the House of CHANEL.
+                        A floral, solar and voluptuous interpretation composed
+                        by Olivier Polge, Perfumer-Creator for the House of
+                        CHANEL.
                     </p>
                     <div class="price">
-                        <strong class="fraunces">$149.99</strong> <sup>$169.99</sup>
+                        <strong class="fraunces">$149.99</strong>
+                        <sup>$169.99</sup>
                     </div>
-                    <button><img src="./images/icon-cart.svg" alt="cart-icon" />Add to Cart</button>
+                    <button>
+                        <img src="./images/icon-cart.svg" alt="cart-icon" />Add
+                        to Cart
+                    </button>
                 </div>
             </article>
-        </div>
-
-        <div class="attribution" hidden>
-            Challenge by
-            <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a
-            >. Coded by <a href="#" target="_blank">Rohan Yadav</a>.
         </div>
     </body>
 </html>
