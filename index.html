@@ -17,19 +17,24 @@
         <title>Product preview card component</title>
     </head>
     <body>
-        <article>
-            <img src="./images/image-product-mobile.jpg" alt="ferfume-image" />
-            <div>Perfume</div>
-            <h1 class="fraunces">Gabrielle Essence Eau De Parfum</h1>
-            <p>
-                A floral, solar and voluptuous interpretation composed by Olivier Polge,
-                Perfumer-Creator for the House of CHANEL.
-            </p>
-            <div><strong class="fraunces">$149.99</strong> <sup>$169.99</sup></div>
-            <div class="btn-container">
-                <button><img src="./images/icon-cart.svg" alt="cart-icon" />Add to Cart</button>
-            </div>
-        </article>
+        <div class="max-width-wrapper">
+            <article>
+                <img src="./images/image-product-mobile.jpg" alt="ferfume-image" />
+
+                <div class="info">
+                    <div class="item-type">PERFUME</div>
+                    <h1 class="fraunces">Gabrielle Essence Eau De Parfum</h1>
+                    <p>
+                        A floral, solar and voluptuous interpretation composed by Olivier Polge,
+                        Perfumer-Creator for the House of CHANEL.
+                    </p>
+                    <div class="price">
+                        <strong class="fraunces">$149.99</strong> <sup>$169.99</sup>
+                    </div>
+                    <button><img src="./images/icon-cart.svg" alt="cart-icon" />Add to Cart</button>
+                </div>
+            </article>
+        </div>
 
         <div class="attribution" hidden>
             Challenge by

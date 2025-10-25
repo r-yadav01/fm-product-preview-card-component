@@ -14,38 +14,80 @@ html {
 body {
     padding: 8px;
     height: 100%;
+    background-color: var(--bg-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+}
+
+.max-width-wrapper {
+    width: auto;
     max-width: 375px;
-    background-color: var(--bg-color);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+h1 {
+    line-height: 1.1;
+    color: hsl(212, 21%, 14%);
+}
+
+.item-type {
+    letter-spacing: 4px;
+    margin-top: 8px;
 }
 
 article {
     background-color: var(--card-bg-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    border-radius: 10px;
+    color: hsl(228, 12%, 48%);
+    box-shadow: 5px 10px 10px hsl(30, 30%, 70%);
 }
 
-.btn-container {
-    display: flex;
-    justify-content: center;
+article > img {
+    border-radius: 12px 12px 0px 0px;
 }
 
-article button {
-    width: 90%;
+div.info {
+    padding: 20px 30px;
+}
+
+div.info > * {
+    margin-bottom: 20px;
+}
+
+.price {
+    display: flex;
+    gap: 16px;
+}
+
+button {
     background-color: var(--btn-color);
     color: var(--card-bg-color);
     display: flex;
     gap: 1rem;
     justify-content: center;
+    align-items: center;
     padding: 12px;
+    border: none;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-weight: 700;
+    box-shadow: 2px 4px 4px hsl(0, 0%, 90%);
 }
 
-article button img {
-    height: 1.5rem;
+button:active {
+    background-color: hsl(158, 42%, 18%);
+    box-shadow: 3px 6px 6px hsl(0, 0%, 80%);
+    cursor: pointer;
+}
+
+button img {
+    width: 1.2rem;
+    height: 1.2rem;
 }
 
 .fraunces {
@@ -54,10 +96,16 @@ article button img {
     font-weight: 700;
     font-style: normal;
     font-variation-settings: 'SOFT' 0, 'WONK' 0;
+    font-size: 2rem;
+}
+
+strong.fraunces {
+    color: var(--btn-color);
 }
 
 sup {
     text-decoration: line-through;
+    font-size: 1rem;
 }
 
 .attribution {
